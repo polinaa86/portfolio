@@ -1,0 +1,46 @@
+site_name: Портфолио
+site_url: https://polinaa86.github.io/portfolio/
+repo_url: https://github.com/polinaa86/portfolio
+repo_name: portfolio
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - content.code.copy
+    - content.action.edit
+    - search.suggest
+  palette:
+    - scheme: default
+      primary: pink
+      accent: purple
+      toggle:
+        icon: material/weather-sunny
+        name: Тёмная тема
+    - scheme: slate
+      primary: pink
+      accent: purple
+      toggle:
+        icon: material/weather-night
+        name: Светлая тема
+
+nav:
+  - Главная: index.md
+  - Лабораторные работы: labs/index.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - admonition
+  - pymdownx.details
+  - pymdownx.tasklist
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
